@@ -5,7 +5,7 @@ export default function HeroButtons() {
   return (
     <div className="mt-8 flex flex-wrap items-center gap-4">
       <Button href="#projects" variant="primary">
-        <span>Ver proyectos</span>
+        <span>View Projects</span>
         <FiArrowRight className="text-lg transition-transform duration-300 group-hover:translate-x-1" />
       </Button>
 
@@ -15,7 +15,7 @@ export default function HeroButtons() {
         external
       >
         <FiDownload className="text-lg" />
-        <span>Descargar CV</span>
+        <span>Download CV</span>
       </Button>
     </div>
   );

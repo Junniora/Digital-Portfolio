@@ -3,10 +3,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaReact, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs, SiPostgresql, SiTypescript, SiTailwindcss } from "react-icons/si";
+import { FaReact, FaGitAlt, FaHSquare, FaCss3Alt, FaJs } from "react-icons/fa";
+import { SiNextdotjs, SiPostgresql, SiTypescript, SiTailwindcss, SiPython } from "react-icons/si";
 import Card from "../ui/Card";
 import Tag from "../ui/Tag";
+import { FaHtml5 } from "react-icons/fa6";
 
 export default function HeroImage() {
   // Estado para rastrear las coordenadas del cursor dentro de la tarjeta
@@ -72,16 +73,16 @@ export default function HeroImage() {
           <div className="mt-5">
             {/* Metadatos o información complementaria */}
             <div className="flex items-center justify-between text-xs text-gray-400 border-b border-white/5 pb-3 mb-4">
-              <span>Basado en México</span>
+              <span>Located in Mexico</span>
               <span className="flex items-center gap-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-purple-400" />
-                Ingeniería en tecnología de Software
+                Software Engineering
               </span>
             </div>
 
             {/* Subtítulo del stack */}
             <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">
-              Stack Destacado
+              Core Technologies
             </h4>
 
             {/* Contenedor Flex Wrap alineado y responsivo */}
@@ -99,8 +100,8 @@ export default function HeroImage() {
                 <span>TypeScript</span>
               </Tag>
               <Tag variant="blue">
-                <SiTailwindcss className="text-sm" />
-                <span>Tailwind</span>
+                <SiPython className="text-sm" />
+                <span>Python</span>
               </Tag>
               <Tag variant="slate">
                 <SiPostgresql className="text-sm" />
@@ -109,6 +110,18 @@ export default function HeroImage() {
               <Tag variant="slate">
                 <FaGitAlt className="text-sm" />
                 <span>Git</span>
+              </Tag>
+              <Tag variant="red">
+                <FaHtml5 className="text-sm" />
+                <span>HTML</span>
+              </Tag>
+              <Tag variant="blue">
+                <FaCss3Alt className="text-sm" />
+                <span>CSS</span>
+              </Tag>
+              <Tag variant="yellow">
+                <FaJs className="text-sm" />
+                <span>JavaScript</span>
               </Tag>
             </div>
           </div>

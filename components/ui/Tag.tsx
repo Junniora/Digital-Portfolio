@@ -1,6 +1,6 @@
 interface TagProps {
   children: React.ReactNode;
-  variant?: "blue" | "slate" | "green" | "purple" | "cyan";
+  variant?: "blue" | "slate" | "green" | "purple" | "cyan" | "red" | "orange" | "yellow" | "pink";
   className?: string;
 }
 
@@ -16,6 +16,10 @@ export default function Tag({
     green: "border-green-500/20 bg-green-500/10 text-green-300",
     purple: "border-purple-500/20 bg-purple-500/10 text-purple-300",
     cyan: "border-cyan-500/20 bg-cyan-500/10 text-cyan-300",
+    red: "border-red-500/20 bg-red-500/10 text-red-300",
+    orange: "border-orange-500/20 bg-orange-500/10 text-orange-300",
+    yellow: "border-yellow-500/20 bg-yellow-500/10 text-yellow-300",
+    pink: "border-pink-500/20 bg-pink-500/10 text-pink-300"
   };
 
   return (

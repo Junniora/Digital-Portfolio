@@ -48,7 +48,7 @@ export default function HeroContent() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
           <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
         </span>
-        Disponible para prácticas y ofertas
+        Available for internships and job opportunities
       </motion.div>
 
       {/* Título Principal con Gradiente Texturado */}
@@ -69,7 +69,7 @@ export default function HeroContent() {
       >
         Software Engineering Student
         <span className="block text-gray-400 font-normal text-lg md:text-xl mt-1">
-          Digital Transformation & Full Stack Developer
+          Software Developer | Web Development & Digital Transformation
         </span>
       </motion.h2>
 
@@ -78,7 +78,7 @@ export default function HeroContent() {
         variants={itemVariants}
         className="mt-6 max-w-xl text-base md:text-lg leading-relaxed text-gray-400 font-light"
       >
-        Me especializo en diseñar e implementar soluciones modernas que automatizan procesos y resuelven problemas reales a través de software escalable, integrando desarrollo Full Stack con visión de negocio.
+        Software Engineering student passionate about developing software solutions that automate processes and solve real-world business challenges. My experience includes web development, process digitalization, automation, and internal business applications, with a strong focus on creating practical and scalable solutions.
       </motion.p>
 
       {/* Botones de acción del Hero */}
