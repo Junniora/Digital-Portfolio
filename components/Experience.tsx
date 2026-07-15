@@ -18,43 +18,45 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    role: "Full Stack Lead Developer (Proyecto Integrador)",
-    company: "Go Digital",
-    period: "Agosto 2025 - Diciembre 2025",
+    role: "Quality Digitalization Intern",
+    company: "Denso México",
+    period: "November 2025 - June 2026",
     description:
-      "Lideré un equipo de desarrollo estudiantil para diseñar y desplegar una plataforma web personalizada orientada a digitalizar operaciones de aprobación de servicios manuales.",
+      "As a Quality Digitalization Intern, I collaborated with the Quality Planning team to support digital transformation initiatives by developing software solutions that replaced manual processes with digital workflows. During my internship, I gained hands-on experience in web development, low-code platforms, database management, industrial data visualization, and process analysis while working closely with engineers and end users to design solutions that improved operational efficiency.",
     achievements: [
-      "Se eliminó el uso de papel en un 100% para procesos de aprobación operativa",
-      "Diseño de base de datos PostgreSQL optimizada para transacciones recurrentes",
-      "Reducción demostrada de 4 horas semanales de trabajo operativo por administrador"
+      "Developed responsive web applications using Vue.js, Quasar Framework, TypeScript, JavaScript, HTML, and CSS to digitize internal business processes.",
+      "Automated workflows with Microsoft Power Apps and SharePoint Lists, reducing manual tasks and improving process efficiency.",
+      "Designed and maintained Domo dashboards using manufacturing data from PLC systems for real-time production monitoring and reporting.",
+      "Built applications with the Arduino IDE to collect data from robotic systems and implement robot head movement control for digitalization projects.",
+      "Worked alongside the Quality Assurance and Quality Planning teams to deliver software solutions that supported the department's digital transformation."
     ],
-    technologies: ["Vue.js", "Quasar", "TypeScript", "PostgreSQL", "Node.js", "Git"]
+    technologies: ["Vue.js", "Quasar", "CSS", "TypeScript", "PostgreSQL", "Node.js", "Git", "Domo", "Microsoft Power Apps", "Arduino IDE"]
   },
   {
-    role: "Desarrollador Full Stack Freelance",
-    company: "Proyectos Independientes",
-    period: "Enero 2024 - Presente",
+    role: "Freelancer Software Developer",
+    company: "Local stationery store (Alyca)",
+    period: "March 2026 - April 2026",
     description:
-      "Construcción de soluciones de software a medida para pymes y particulares, priorizando la velocidad de carga, responsividad y buenas prácticas de SEO.",
+      "Alyca is a desktop application developed for a local stationery store to simplify daily business operations. The system provides inventory management, a point-of-sale (POS) interface, automatic change calculation during sales, and sales reporting. It was built with Vue.js, Electron, and SQLite, allowing the application to run as a lightweight desktop solution without requiring an internet connection.",
     achievements: [
-      "Despliegue y configuración de arquitecturas serverless en Vercel y Netlify",
-      "Modelado de bases de datos relacionales y no relacionales eficientes",
-      "Implementación de layouts de interfaz dinámicos con Tailwind CSS y Framer Motion"
+      "Developed sales reports to help monitor daily business performance.",
+      "Integrated a local SQLite database for reliable offline data storage..",
+      "Created an intuitive and user-friendly interface focused on improving the store's daily workflow."
     ],
-    technologies: ["React", "Next.js", "Tailwind CSS", "MongoDB", "Supabase", "Prisma"]
+    technologies: ["Vue.JS", "Electron", "SQLite"]
   },
   {
-    role: "Estudiante de Ingeniería de Software",
-    company: "Universidad / Proyectos de Ingeniería",
-    period: "Agosto 2023 - Presente",
+    role: "Software Engineering student",
+    company: "Facultad de Ingeniería Mecánica y Eléctrica (FIME)",
+    period: "August 2022 - Present",
     description:
-      "Formación académica en ciencias de la computación, desarrollo de software ágil, estructuras de datos avanzadas e ingeniería de requisitos.",
+      "As a Software Engineering student at FIME, I have been actively involved in various academic projects and collaborative initiatives. My coursework has provided me with a strong foundation in programming languages, software development methodologies, and design principles. I have also participated in group projects that emphasize teamwork, problem-solving, and the application of theoretical knowledge to practical scenarios.",
     achievements: [
-      "Desarrollo de proyectos académicos robustos en C++, Python y Java",
-      "Colaboración activa en proyectos grupales bajo metodologías SCRUM",
-      "Estudio profundo de patrones de diseño de software y principios SOLID"
+      "Web development projects using HTML, CSS, JavaScript",
+      "Arduino projects for hardware control and automation",
+      "Algorithm design and implementation in Python",
     ],
-    technologies: ["TypeScript", "C++", "Python", "SQL", "Git", "Scrum"]
+    technologies: ["Python", "C++", "SQLite", "HTML5", "CSS3", "JavaScript", "Arduino IDE"]
   }
 ];
 
@@ -66,9 +68,9 @@ export default function Experience() {
 
       <Container>
         <SectionTitle
-          badge="Trayectoria"
-          title="Mi experiencia y crecimiento"
-          subtitle="Un recorrido cronológico a través de mis proyectos académicos, colaboraciones y mi formación como ingeniero de software."
+          badge="Career"
+          title="My experience and growth"
+          subtitle="A chronological journey through my academic projects, collaborations, and software engineering education."
         />
 
         {/* Línea de tiempo vertical */}
@@ -113,7 +115,7 @@ export default function Experience() {
                 {/* Logros (Bullet points premium) */}
                 <div className="mb-5">
                   <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                    Logros Clave
+                    Key Achievements
                   </h4>
                   <ul className="space-y-2 text-xs md:text-sm text-gray-400">
                     {exp.achievements.map((ach, aIdx) => (

@@ -38,20 +38,20 @@ export default function HeroContent() {
       animate="visible"
       className="flex flex-col items-start text-left"
     >
-      {/* Badge de disponibilidad premium con punto verde parpadeante */}
+      {/* Badge punto verde parpadeante */}
       <motion.div 
         variants={itemVariants}
         className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/20 bg-purple-500/5 text-xs font-semibold text-purple-300 backdrop-blur-md mb-6 hover:border-purple-400/30 transition-all duration-300"
       >
         <span className="relative flex h-2 w-2">
-          {/* Efecto radar del punto verde */}
+          {/* punto verde */}
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
           <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
         </span>
         Available for internships and job opportunities
       </motion.div>
 
-      {/* Título Principal con Gradiente Texturado */}
+      {/* Título Principal */}
       <motion.h1 
         variants={itemVariants}
         className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-white"
@@ -62,7 +62,7 @@ export default function HeroContent() {
         </span>
       </motion.h1>
 
-      {/* Subtítulo Profesional */}
+      {/* Subtítulo */}
       <motion.h2 
         variants={itemVariants}
         className="mt-6 text-xl md:text-2xl font-semibold text-gray-300/90 leading-relaxed"
@@ -73,7 +73,7 @@ export default function HeroContent() {
         </span>
       </motion.h2>
 
-      {/* Descripción Breve y Persuasiva */}
+      {/* Descripción Breve */}
       <motion.p 
         variants={itemVariants}
         className="mt-6 max-w-xl text-base md:text-lg leading-relaxed text-gray-400 font-light"

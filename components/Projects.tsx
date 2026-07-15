@@ -35,9 +35,9 @@ export default function Projects() {
 
       <Container>
         <SectionTitle
-          badge="Proyectos"
-          title="Trabajo que habla por mí"
-          subtitle="Una selección de sistemas de software diseñados y desplegados de extremo a extremo, enfocados en resolver problemas prácticos y aportar valor."
+          badge="Projects"
+          title="Work that speaks for itself"
+          subtitle="A selection of software systems designed and deployed end-to-end, focused on solving practical problems and delivering value."
         />
 
         {/* Grid de Proyectos */}
