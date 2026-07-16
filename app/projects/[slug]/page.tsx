@@ -3,6 +3,7 @@ import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Tag from "@/components/ui/Tag";
 import { FiArrowLeft, FiCode, FiLayers, FiCompass } from "react-icons/fi";
+import { projects } from "@/data/projects";
 
 interface ProjectPageProps {
   params: Promise<{ slug: string }>;
@@ -12,11 +13,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   // En Next.js 15/16 params es una Promesa y debe ser esperada mediante await
   const { slug } = await params;
 
-  // Formatear el slug para mostrar un nombre más legible (ej. "go-digital" -> "Go Digital")
-  const displayTitle = slug
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+  const project = projects.find(
+    (project) => project.slug === slug
+  );
+
+  if (!project) {
+    return <div>Project not found</div>;
+  }
 
   return (
     <main className="relative min-h-screen pt-32 pb-20 overflow-hidden bg-background text-foreground">
@@ -42,10 +45,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <Tag variant="purple">App Router</Tag>
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
-            {displayTitle}
+            {project.title}
           </h1>
           <p className="text-lg md:text-xl text-gray-400 font-light">
-            Detalle técnico y caso de estudio para el proyecto {slug}. Esta página se genera dinámicamente utilizando el sistema de rutas dinámicas de Next.js.
+            {project.description}
           </p>
         </div>
 
@@ -56,30 +59,30 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <Card hoverEffect={false}>
               <h2 className="text-xl md:text-2xl font-bold text-white mb-4 flex items-center gap-2">
                 <FiCompass className="text-blue-400" />
-                Problema & Reto
+                Problem & Challenge
               </h2>
               <p className="text-gray-400 leading-relaxed">
-                [Detalle del problema a resolver. Aquí se documentará la necesidad del cliente o del negocio, las limitaciones tecnológicas originales y los objetivos de transformación digital planteados.]
+                {project.problem}
               </p>
             </Card>
 
             <Card hoverEffect={false}>
               <h2 className="text-xl md:text-2xl font-bold text-white mb-4 flex items-center gap-2">
                 <FiCode className="text-cyan-400" />
-                Solución Implementada
+                Implemented Solution
               </h2>
               <p className="text-gray-400 leading-relaxed mb-4">
-                [Descripción detallada de la solución de software. Arquitectura elegida, justificación técnica del desarrollo y cómo esta solución mitiga de manera directa el problema.]
+                {project.solution}
               </p>
             </Card>
 
             <Card hoverEffect={false}>
               <h2 className="text-xl md:text-2xl font-bold text-white mb-4 flex items-center gap-2">
                 <FiLayers className="text-indigo-400" />
-                Arquitectura y Buenas Prácticas
+                Architecture and Best Practices
               </h2>
               <p className="text-gray-400 leading-relaxed">
-                [Diagrama de flujo o descripción de la infraestructura utilizada. Patrones de diseño implementados, principios SOLID aplicados, pruebas realizadas y buenas prácticas de desarrollo de software aplicadas.]
+                {project.architecture}
               </p>
             </Card>
           </div>
@@ -89,29 +92,23 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <Card className="border-blue-500/10">
               <h3 className="text-lg font-bold text-white mb-4">Tecnologías</h3>
               <div className="flex flex-wrap gap-2">
-                <Tag variant="blue">Next.js</Tag>
-                <Tag variant="purple">TypeScript</Tag>
-                <Tag variant="cyan">Tailwind CSS</Tag>
-                <Tag variant="slate">React</Tag>
-                <Tag variant="green">API Rest</Tag>
+                {project.technologies.map((tech) => (
+                  <Tag key={tech} variant="slate" className="text-xs py-0.5 px-2">
+                    {tech}
+                  </Tag>
+                ))}
               </div>
             </Card>
 
             <Card>
               <h3 className="text-lg font-bold text-white mb-4">Resultados Obtenidos</h3>
               <ul className="space-y-3 text-sm text-gray-400">
-                <li className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                  <span>Optimización del 40% en carga</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                  <span>Arquitectura modular y reusable</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                  <span>Código 100% tipeado en TypeScript</span>
-                </li>
+                {project.results.map((result) => (
+                  <li key={result} className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+                    <span>{result}</span>
+                  </li>
+                ))}
               </ul>
             </Card>
           </div>

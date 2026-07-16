@@ -35,7 +35,7 @@ export default function Projects() {
 
       <Container>
         <SectionTitle
-          badge="Projects"
+          badge="Featured Projects"
           title="Work that speaks for itself"
           subtitle="A selection of software systems designed and deployed end-to-end, focused on solving practical problems and delivering value."
         />
@@ -93,7 +93,7 @@ export default function Projects() {
                     variant="secondary"
                     className="w-full text-xs md:text-sm py-2"
                   >
-                    <span>Caso de estudio</span>
+                    <span>Case Study</span>
                   </Button>
 
                   {/* GitHub Link */}
@@ -103,7 +103,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/20 text-gray-300 hover:text-white transition-all duration-300 text-sm shrink-0"
-                      aria-label="Ver código en GitHub"
+                      aria-label="View GitHub Repository"
                     >
                       <FiGithub />
                     </a>
@@ -116,7 +116,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/20 text-gray-300 hover:text-white transition-all duration-300 text-sm shrink-0"
-                      aria-label="Ver sitio en vivo"
+                      aria-label="View Website"
                     >
                       <FiExternalLink />
                     </a>

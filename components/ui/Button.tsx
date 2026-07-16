@@ -14,7 +14,7 @@ interface ButtonProps {
 }
 
 // Versiones animadas de componentes
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 const MotionAnchor = motion.a;
 const MotionButton = motion.button;
 

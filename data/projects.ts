@@ -4,16 +4,19 @@ export const projects: Project[] = [
   {
     slug: "go-digital",
     title: "Go Digital",
-    role: "Full Stack Lead Developer",
-    date: "2025",
-    description: "Plataforma de transformación digital diseñada para automatizar flujos operativos, reduciendo tiempos administrativos en un 35%.",
-    technologies: ["Vue.js", "Quasar", "TypeScript", "PostgreSQL", "Node.js"],
+    role: "Full Stack Developer",
+    date: "2026",
+    problem: "The client needed a centralized platform to manage and track Digital Transformation (DX) requests and technical support, which were previously handled through scattered emails and spreadsheets.",
+    solution: "Developed a comprehensive web platform that automates the lifecycle of DX requests, including creation, assignment, status updates, and completion tracking. Implemented a responsive interface using Quasar Framework for improved usability.",
+    architecture: "The application is built with Vue.js and TypeScript on the frontend, C# for backend services, and PostgreSQL for data storage. It follows a modular architecture with clear separation of concerns and adheres to SOLID principles.",
+    description: "Is a comprehensive web platform designed for managing, tracking, and collaborating on Digital Transformation (DX) requests and technical support. ",
+    technologies: ["Vue.js", "TypeScript", "C#", "PostgreSQL", "SCSS", "JavaScript", "Node.js", "Pinia"],
     results: [
-      "Digitalización de 12 flujos de aprobación manuales",
-      "Generación automática de reportes ejecutivos en PDF",
-      "Base de datos optimizada para consultas de alta concurrencia"
+      "Automated request lifecycle management, including creation, assignment, status updates, and completion tracking.",
+      "Developed a responsive and intuitive interface using Quasar Framework, improving usability across desktop devices.",
+      "Successfully centralized the management of Digital Transformation (DX) requests into a single web platform.",
     ],
-    github: "https://github.com",
+    github: "https://github.com/Junniora/GoDigital",
     link: "https://example.com"
   },
   {
@@ -21,6 +24,9 @@ export const projects: Project[] = [
     title: "Nova ERP",
     role: "Frontend Developer",
     date: "2026",
+    problem: "Test",
+    solution: "Test",
+    architecture: "Test",
     description: "Sistema de planificación de recursos para control de inventarios, facturación y análisis predictivo de ventas de alto rendimiento.",
     technologies: ["React", "Next.js", "Tailwind CSS", "Supabase", "Prisma"],
     results: [
