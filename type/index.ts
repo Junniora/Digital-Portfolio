@@ -10,5 +10,5 @@ export interface Project {
   date?: string;
   link?: string;
   github?: string;
-  results?: string[];
+  results: string[];
 }

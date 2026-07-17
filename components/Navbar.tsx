@@ -18,22 +18,22 @@ export default function Navbar() {
           <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
             <li>
               <a href="#about" className="hover:text-white transition-colors duration-300">
-                Sobre mí
+                About me
               </a>
             </li>
             <li>
               <a href="#experience" className="hover:text-white transition-colors duration-300">
-                Experiencia
+                Experience
               </a>
             </li>
             <li>
               <a href="#projects" className="hover:text-white transition-colors duration-300">
-                Proyectos
+                Projects
               </a>
             </li>
             <li>
               <a href="#contact" className="hover:text-white transition-colors duration-300">
-                Contacto
+                Contact Information
               </a>
             </li>
           </ul>

@@ -15,16 +15,16 @@ export default function Footer() {
           {/* Enlaces Rápidos */}
           <div className="flex items-center gap-6">
             <a href="#about" className="hover:text-purple-400 transition-colors duration-300">
-              Sobre mí
+              About me
             </a>
             <a href="#experience" className="hover:text-purple-400 transition-colors duration-300">
-              Experiencia
+              Experience
             </a>
             <a href="#projects" className="hover:text-purple-400 transition-colors duration-300">
-              Proyectos
+              Projects
             </a>
             <a href="#contact" className="hover:text-purple-400 transition-colors duration-300">
-              Contacto
+              Contact Information
             </a>
           </div>
         </div>

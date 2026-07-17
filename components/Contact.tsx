@@ -53,9 +53,9 @@ export default function Contact() {
 
       <Container>
         <SectionTitle
-          badge="Contacto"
-          title="Iniciemos una conversación"
-          subtitle="¿Tienes alguna oferta de prácticas, un proyecto o simplemente quieres saludar? Conéctate conmigo a través de mis canales directos."
+          badge="Contact Information"
+          title="Let's Start a Conversation"
+          subtitle="Do you have an internship opportunity, a project, or just want to say hello? Feel free to connect with me through my direct channels."
         />
 
         {/* 
@@ -220,7 +220,7 @@ export default function Contact() {
                 <FiMail className="text-xl" />
               </div>
               <div className="flex-grow min-w-0">
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-500">Correo directo</h4>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-500">Email</h4>
                 <a
                   href="mailto:angelalvarezgr@gmail.com"
                   className="text-sm md:text-base font-bold text-white hover:text-purple-300 transition-colors duration-300 block truncate mt-1"
