@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ángel Álvarez | Software Engineer",
   description:
-    "Portfolio de Ángel Álvarez, estudiante de Ingeniería en Tecnologías de Software especializado en desarrollo Full Stack y transformación digital.",
+    "Portfolio de Ángel Álvarez, estudiante de Ingeniería en Tecnologías de Software especializado en desarrollo web y transformación digital.",
 };
 
 export default function RootLayout({

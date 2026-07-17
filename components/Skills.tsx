@@ -5,12 +5,12 @@ import Container from "./Container";
 import SectionTitle from "./ui/SectionTitle";
 import Card from "./ui/Card";
 import { 
-  FaReact, FaNodeJs, FaGitAlt, FaHtml5, FaCss3Alt, FaPython 
+  FaReact, FaNodeJs, FaGitAlt, FaHtml5, FaCss3Alt, FaPython, FaJs, FaChartBar, FaGithub, FaMicrosoft 
 } from "react-icons/fa";
 import { 
   SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, 
   SiMongodb, SiPrisma, SiSupabase, SiDocker, SiCplusplus, 
-  SiExpress, SiVuedotjs 
+  SiExpress, SiVuedotjs, SiQuasar, SiFirebase, SiSqlite, SiJavascript, SiKotlin, SiArduino,
 } from "react-icons/si";
 
 interface SkillItem {
@@ -30,39 +30,43 @@ export default function Skills() {
       skills: [
         { name: "React", icon: <FaReact className="text-blue-400 text-lg" /> },
         { name: "Next.js", icon: <SiNextdotjs className="text-white text-lg" /> },
-        { name: "TypeScript", icon: <SiTypescript className="text-blue-500 text-lg" /> },
         { name: "Vue.js", icon: <SiVuedotjs className="text-green-500 text-lg" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400 text-lg" /> },
+        { name: "Quasar", icon: <SiQuasar className="text-cyan-400 text-lg" /> },
+        { name: "TypeScript", icon: <SiTypescript className="text-blue-500 text-lg" /> },
         { name: "HTML5", icon: <FaHtml5 className="text-orange-500 text-lg" /> },
         { name: "CSS3", icon: <FaCss3Alt className="text-blue-500 text-lg" /> }
       ]
     },
+
     {
-      title: "Backend & Servidores",
+      title: "Programming Languages",
       skills: [
-        { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-lg" /> },
-        { name: "Express.js", icon: <SiExpress className="text-white text-lg" /> },
+        { name: "TypeScript", icon: <SiTypescript className="text-blue-500 text-lg" /> },
+        { name: "JavaScript", icon: <SiJavascript className="text-yellow-400 text-lg" /> },
         { name: "Python", icon: <FaPython className="text-yellow-400 text-lg" /> },
         { name: "C++", icon: <SiCplusplus className="text-blue-600 text-lg" /> },
-        { name: "REST APIs", icon: <SiTypescript className="text-purple-400 text-lg" /> }
+        { name: "Kotlin", icon: <SiKotlin className="text-orange-500 text-lg" /> }
       ]
     },
+
     {
-      title: "Bases de Datos & Cloud",
+      title: "Databases & Cloud",
       skills: [
         { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-400 text-lg" /> },
-        { name: "MongoDB", icon: <SiMongodb className="text-green-400 text-lg" /> },
-        { name: "Prisma ORM", icon: <SiPrisma className="text-teal-500 text-lg" /> },
-        { name: "Supabase", icon: <SiSupabase className="text-emerald-500 text-lg" /> }
+        { name: "SQLite", icon: <SiSqlite className="text-cyan-400 text-lg" /> },
+        { name: "Firebase", icon: <SiFirebase className="text-orange-500 text-lg" /> },
+        { name: "SharePoint Lists", icon: <FaMicrosoft className="text-green-500 text-lg" /> }
       ]
     },
+
     {
-      title: "Herramientas & Workflow",
+      title: "Tools & Workflow",
       skills: [
         { name: "Git", icon: <FaGitAlt className="text-orange-500 text-lg" /> },
-        { name: "Docker", icon: <SiDocker className="text-blue-500 text-lg" /> },
-        { name: "GitHub", icon: <FaGitAlt className="text-white text-lg" /> },
-        { name: "Metodología Ágil", icon: <FaReact className="text-fuchsia-400 text-lg" /> }
+        { name: "GitHub", icon: <FaGithub className="text-white text-lg" /> },
+        { name: "Power Apps", icon: <FaMicrosoft className="text-blue-500 text-lg" /> },
+        { name: "Domo", icon: <FaChartBar className="text-indigo-500 text-lg" /> },
+        { name: "Arduino IDE", icon: <SiArduino className="text-cyan-500 text-lg" /> }
       ]
     }
   ];
@@ -92,9 +96,9 @@ export default function Skills() {
 
       <Container>
         <SectionTitle
-          badge="Habilidades"
-          title="Mi arsenal de herramientas"
-          subtitle="Una vista detallada de los lenguajes, frameworks y herramientas que utilizo para materializar soluciones de software."
+          badge="Skills"
+          title="Technical Skills"
+          subtitle="An overview of the programming languages, frameworks, and tools I use to design and develop software solutions."
         />
 
         <motion.div

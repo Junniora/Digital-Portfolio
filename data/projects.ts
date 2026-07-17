@@ -20,37 +20,38 @@ export const projects: Project[] = [
     link: "https://example.com"
   },
   {
-    slug: "nova-erp",
-    title: "Nova ERP",
-    role: "Frontend Developer",
+    slug: "quality-gate",
+    title: "Quality Gate(QA PMS)",
+    role: "Mobile Developer",
     date: "2026",
-    problem: "Test",
-    solution: "Test",
-    architecture: "Test",
-    description: "Sistema de planificación de recursos para control de inventarios, facturación y análisis predictivo de ventas de alto rendimiento.",
-    technologies: ["React", "Next.js", "Tailwind CSS", "Supabase", "Prisma"],
+    problem: "The quality validation process relied heavily on spreadsheets and paper-based documentation, making traceability, milestone verification, and production approval workflows inefficient and difficult to monitor.",
+    solution: "Developed a digital quality management platform that centralizes component registration, validation milestones, evidence tracking, and approval workflows. The system provides role-based access, automated processes, and analytical dashboards to improve operational visibility.",
+    architecture: "Built using an MVVM architecture with Jetpack Compose for the user interface, StateFlow for reactive state management, Firebase services for authentication and cloud data management, and Kotlin Coroutines for optimized asynchronous operations.",
+    description: "A high-performance Quality Management System designed for automotive component traceability and validation. The platform digitizes quality assurance workflows, enabling milestone tracking, hardware registration, approvals, and KPI-driven decision making.",
+    technologies: ["Kotlin", "Firebase Authentication", "Cloud Firestore"],
     results: [
-      "Diseño de Dashboard interactivo con gráficos en tiempo real",
-      "Sincronización multi-sucursal de stock en milisegundos",
-      "Facturación electrónica integrada mediante API de terceros"
+      "Digitized the quality validation workflow, replacing manual spreadsheet-based processes.",
+      "Created KPI dashboards for operational monitoring and management decision-making.",
+      "Implemented role-based navigation for Supervisors, Reviewers, and Approvers."
     ],
-    github: "https://github.com",
-    link: "https://example.com"
+    github: "https://github.com/Junniora/QualityGateV1",
   },
   {
-    slug: "taskflow",
-    title: "TaskFlow",
-    role: "Full Stack Developer",
+    slug: "alyca",
+    title: "Alyca",
+    role: "Software Developer",
     date: "2026",
-    description: "Gestor colaborativo de tareas basado en tableros Kanban interactivos, con actualizaciones en tiempo real y diseño minimalista.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Framer Motion"],
+    problem: "The client required a desktop application to manage inventory and sales transactions for a local stationery store, which was previously handled manually.",
+    solution: "Developed a desktop application that integrates inventory management, a point-of-sale workflow, automatic change calculation, and sales reporting. The system provides a centralized platform to improve operational efficiency and reduce manual errors.",
+    architecture: "Built as a desktop application using Electron with a Vue.js frontend and SQLite as the local database solution for persistent inventory and transaction management.",
+    description: "A desktop inventory and point-of-sale system developed for a local stationery store. The application manages available products, processes sales transactions, calculates customer change, and generates sales reports.",
+    technologies: ["Vue.JS", "Electron", "JavaScript", "SQLite"],
     results: [
-      "Colaboración simultánea entre equipos usando sockets",
-      "Interfaz Drag & Drop fluida con Framer Motion",
-      "Carga inicial optimizada de la app de menos de 1.2 segundos"
+      "Created a complete inventory management system for a local business.",
+      "Implemented a point-of-sale workflow with automatic customer change calculation.",
+      "Developed sales reports to monitor business transactions."
     ],
-    github: "https://github.com",
-    link: "https://example.com"
+    github: "https://github.com/Junniora/Alyca-Papeler-a",
   },
   
 ];

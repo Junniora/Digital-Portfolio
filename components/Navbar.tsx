@@ -8,7 +8,7 @@ export default function Navbar() {
         <nav className="h-16 flex items-center justify-between">
           {/* Logo / Nombre */}
           <a 
-            href="#" 
+            href="/" 
             className="font-bold text-lg tracking-tight text-white hover:text-purple-400 transition-colors duration-300"
           >
             Ángel Álvarez
@@ -17,17 +17,17 @@ export default function Navbar() {
           {/* Links de Navegación (Desktop) */}
           <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
             <li>
-              <a href="#about" className="hover:text-white transition-colors duration-300">
+              <a href="/#about" className="hover:text-white transition-colors duration-300">
                 About me
               </a>
             </li>
             <li>
-              <a href="#experience" className="hover:text-white transition-colors duration-300">
+              <a href="/#experience" className="hover:text-white transition-colors duration-300">
                 Experience
               </a>
             </li>
             <li>
-              <a href="#projects" className="hover:text-white transition-colors duration-300">
+              <a href="/#projects" className="hover:text-white transition-colors duration-300">
                 Projects
               </a>
             </li>

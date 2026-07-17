@@ -34,18 +34,21 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="mb-10">
           <Button href="/" variant="outline" className="gap-2">
             <FiArrowLeft />
-            <span>Volver al inicio</span>
+            <span>Back to Home </span>
           </Button>
         </div>
 
         {/* Encabezado del Proyecto */}
         <div className="max-w-3xl mb-12">
           <div className="flex flex-wrap gap-2 mb-4">
-            <Tag variant="cyan">Proyecto Dinámico</Tag>
-            <Tag variant="purple">App Router</Tag>
-          </div>
+            {/* <Tag variant="cyan">Proyecto Dinámico</Tag> */}
+             {/*<Tag variant="purple">App Router</Tag> */}
+          </div> 
+
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
-            {project.title}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+              {project.title}
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-gray-400 font-light">
             {project.description}
