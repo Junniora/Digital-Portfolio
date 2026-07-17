@@ -93,7 +93,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           {/* Columna Lateral (Metadatos del Proyecto) */}
           <div className="space-y-8">
             <Card className="border-blue-500/10">
-              <h3 className="text-lg font-bold text-white mb-4">Tecnologías</h3>
+              <h3 className="text-lg font-bold text-white mb-4">Technologies</h3>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
                   <Tag key={tech} variant="slate" className="text-xs py-0.5 px-2">
@@ -104,7 +104,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </Card>
 
             <Card>
-              <h3 className="text-lg font-bold text-white mb-4">Resultados Obtenidos</h3>
+              <h3 className="text-lg font-bold text-white mb-4">Results</h3>
               <ul className="space-y-3 text-sm text-gray-400">
                 {project.results.map((result) => (
                   <li key={result} className="flex items-center gap-2">
